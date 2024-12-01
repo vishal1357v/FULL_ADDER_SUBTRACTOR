@@ -57,6 +57,7 @@ and AND-OR logic to determine carry or borrow conditions.
 Write the detailed procedure here
 
 ### PROGRAM:
+```
 module fulladdsub(a,b,cin,bin,sum,carry,difference,borrow);
 input a,b,cin,bin;
 output sum,carry,difference,borrow;
@@ -65,6 +66,7 @@ assign carry=(a^b)&cin|a&b;
 assign difference=a^b^bin;
 assign borrow=~(a^b)&bin|(~a)&b;
 endmodule
+```
 
 
 ### RTL OUTPUT:
